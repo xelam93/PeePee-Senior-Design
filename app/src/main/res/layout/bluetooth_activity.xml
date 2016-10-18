@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bluetooth_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hjhawkinsiv.bluetoothapplication.BluetoothActivity">
+
+    <Button
+        android:text="Enable Bluetooth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enable_button"
+        style="@android:style/Widget.Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Scan for Devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scan_button"
+        android:layout_marginTop="34dp"
+        style="@android:style/Widget.Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/enable_button"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="List Paired Devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_button"
+        style="@android:style/Widget.Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/scan_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:text="Last Known Location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc_button"
+        style="@android:style/Widget.Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_marginTop="90dp"
+        android:layout_alignTop="@+id/list_button"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="List of Last Locations"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loc_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/loclist_button"
+        style="@android:style/Widget.Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+</RelativeLayout>
